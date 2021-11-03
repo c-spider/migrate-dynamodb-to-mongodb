@@ -2,8 +2,8 @@ const MigrationJob = require('dynamodb-mongodb-migrate');
 
 let sourceConnectionOptions = {
     region: 'eu-west-2',
-    accessKeyId: 'AKIARORJINLQL3VKXEXE',
-    secretAccessKey: '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'
+    accessKeyId: 'CAKIARORJINLQL3VKXEXE',
+    secretAccessKey: '13GAmDKZaqlLs+6wC1H9cvfH8rgmJAW7FCP6xTIlZ'
 };
 let targetConnectionOptions = {
     host: '3.8.117.18:27017',
