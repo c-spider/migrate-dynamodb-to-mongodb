@@ -1,43 +1,9 @@
 const MigrationJob = require('dynamodb-mongodb-migrate');
 
 var table_names = [
-    'Auction-2hoxlz4zpjdadjqflzmzyjvrni-tefi',
-    'Auction-g5gateay2rfuneojj47demcjku-testback',
-    'Auction-woce6dfenzhefccq5x6m3ccrae-talis',
-    'Auction-zlvlw7edobcujfccrzetmwqqzq-prodenv',
-    'Bid-g5gateay2rfuneojj47demcjku-testback',
-    'Bid-zlvlw7edobcujfccrzetmwqqzq-prodenv',
-    'Buys-2hoxlz4zpjdadjqflzmzyjvrni-tefi',
-    'Buys-woce6dfenzhefccq5x6m3ccrae-talis',
-    'CandyMachine-g5gateay2rfuneojj47demcjku-testback',
-    'CandyMachine-zlvlw7edobcujfccrzetmwqqzq-prodenv',
-    'Collection-g5gateay2rfuneojj47demcjku-testback',
-    'Collection-zlvlw7edobcujfccrzetmwqqzq-prodenv',
-    'Edition-g5gateay2rfuneojj47demcjku-testback',
-    'Edition-zlvlw7edobcujfccrzetmwqqzq-prodenv',
-    'LastActions-2hoxlz4zpjdadjqflzmzyjvrni-tefi',
-    'LastActions-woce6dfenzhefccq5x6m3ccrae-talis',
-    'Mint-2hoxlz4zpjdadjqflzmzyjvrni-tefi',
-    'Mint-woce6dfenzhefccq5x6m3ccrae-talis',
-    'Sales-2hoxlz4zpjdadjqflzmzyjvrni-tefi',
-    'Sales-woce6dfenzhefccq5x6m3ccrae-talis',
-    'TefiUser-2hoxlz4zpjdadjqflzmzyjvrni-tefi',
-    'Token-2hoxlz4zpjdadjqflzmzyjvrni-tefi',
-    'Token-g5gateay2rfuneojj47demcjku-testback',
-    'Token-woce6dfenzhefccq5x6m3ccrae-talis',
-    'Token-zlvlw7edobcujfccrzetmwqqzq-prodenv',
-    'Transaction-2hoxlz4zpjdadjqflzmzyjvrni-tefi',
-    'Transaction-g5gateay2rfuneojj47demcjku-testback',
-    'Transaction-woce6dfenzhefccq5x6m3ccrae-talis',
-    'Transaction-zlvlw7edobcujfccrzetmwqqzq-prodenv',
-    'User-2hoxlz4zpjdadjqflzmzyjvrni-tefi',
-    'User-g5gateay2rfuneojj47demcjku-testback',
-    'User-woce6dfenzhefccq5x6m3ccrae-talis',
-    'User-zlvlw7edobcujfccrzetmwqqzq-prodenv',
-    'WhitelistPhase-g5gateay2rfuneojj47demcjku-testback',
-    'WhitelistPhase-zlvlw7edobcujfccrzetmwqqzq-prodenv',
-    'WithdrawedToken-g5gateay2rfuneojj47demcjku-testback',
-    'WithdrawedToken-zlvlw7edobcujfccrzetmwqqzq-prodenv'
+    'djqflzmzyjvrni-tefi',
+    'rfuneojj47demcjku-testback',
+    'efccq5x6m3ccrae-talis'
 ];
 
 let sourceConnectionOptions = {
