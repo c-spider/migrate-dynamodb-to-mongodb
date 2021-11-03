@@ -51,7 +51,7 @@ let targetConnectionOptions = {
     password: ''
 };
 
-run = async ()
+run = function()
 {
     foreach(table in table_names) 
     {
