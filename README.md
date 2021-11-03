@@ -1,4 +1,4 @@
 # migrate-dynamodb-to-mongodb
 
-1. run npm install
-2. run node migrate.js
+1. run npm install dynamodb-mongodb-migrate
+2. run node migratedb.js
