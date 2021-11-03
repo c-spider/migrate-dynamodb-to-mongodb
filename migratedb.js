@@ -42,8 +42,8 @@ var table_names = [
 
 let sourceConnectionOptions = {
     region: 'eu-west-2',
-    accessKeyId: 'CAKIARORJINLQL3VKXEXE',
-    secretAccessKey: '13GAmDKZaqlLs+6wC1H9cvfH8rgmJAW7FCP6xTIlZ'
+    accessKeyId: 'CA1KIARORJINLQL3VKXEXE',
+    secretAccessKey: '131GAmDKZaqlLs+6wC1H9cvfH8rgmJAW7FCP6xTIlZ'
 };
 let targetConnectionOptions = {
     host: 'localhost:27017',
