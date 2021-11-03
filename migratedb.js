@@ -42,7 +42,7 @@ var table_names = [
 
 let sourceConnectionOptions = {
     region: 'eu-west-2',
-    accessKeyId: 'CA1KIARORJINLQL3VKXEXE',
+    accessKeyId: '1A1KIARORJINLQL3VKXEXE',
     secretAccessKey: '131GAmDKZaqlLs+6wC1H9cvfH8rgmJAW7FCP6xTIlZ'
 };
 let targetConnectionOptions = {
@@ -51,13 +51,18 @@ let targetConnectionOptions = {
     password: ''
 };
 
-run = function()
+async function run()
 {
-    foreach(table in table_names) 
+    for(let i = 0; i < table_names.length; i++)
     {
-        console.log('table : ' + table)
-        const migrationJob = new MigrationJob('Bid-g5gateay2rfuneojj47demcjku-testback', 'Bid-g5gateay2rfuneojj47demcjku-testback', 'migratioin_from_dynamodb', sourceConnectionOptions, targetConnectionOptions, 100, 100);
-        await migrationJob.run()
+        console.log('table : ' + table_names[i])
+        try {
+            const migrationJob = new MigrationJob(table_names[i], table_names[i], 'migratioin_from_dynamodb', sourceConnectionOptions, targetConnectionOptions, 100, 100);
+            await migrationJob.run()
+        }
+        catch (err) {
+            console.log("cannot connect database");
+        }
     }
 };
 
